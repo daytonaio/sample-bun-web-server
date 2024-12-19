@@ -1,0 +1,24 @@
+<!-- views/error.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Error - <%= status %></title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Error <%= status %></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/api/data">API Data</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2><%= status %> - <%= message %></h2>
+    <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+  </div>
+  <script src="/js/script.js"></script>
+</body>
+</html>
