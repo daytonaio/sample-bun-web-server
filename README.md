@@ -1,13 +1,6 @@
-This repository contains a README file sample for Daytona Samples and the MIT License.
+# Sample JavaScript/Bun
 
-It can be used as a template to create sample repositories that can be added into [Daytona](https://github.com/daytonaio/daytona).
-
-Once you finish your sample and it gets merged, you can open a PR in the Daytona repo and submit the sample into the [index file](https://github.com/daytonaio/daytona/blob/main/hack/samples/index.json).
-
-# Sample <LANGUAGE/FRAMEWORK>
-
-Sample description
-
+Sample Bun, HTTP server that demonstrates routing, template rendering using EJS, and static file handling. 
 ---
 
 ## 🚀 Getting Started  
@@ -17,18 +10,69 @@ Sample description
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
 2. **Create the Workspace**:  
    ```bash  
-   daytona create <SAMPLE_REPO_URL> 
+   daytona create https://github.com/daytonaio/sample-bun.git
    ```  
-
-... MORE STEPS IF NEEDED ...
-
-4. **Start the Application**:  
+3. **Install Bun**:  
+   Follow the [Bun installation guide](https://bun.sh/docs/installation) to install Bun on your system.  
+4. **Install Dependencies**:  
+   Run the following command to install the project dependencies:  
    ```bash  
-   command to start the app
+   bun install  
    ```  
+5. **Start the Application**:  
+   Use the following command to start the server:  
+   ```bash  
+   bun run server.js  
+   ```  
+
+6. **Access the Application**:  
+   Open your browser and navigate to:  
+   ```
+   http://localhost:3000
+   ```
 
 ---
 
 ## ✨ Features  
 
-List of sample features (e.g. realtime chat app, standardized development environment with devcontainers)
+- **Dynamic Routing**: Includes routes for home, about, and API data endpoints.  
+- **Template Rendering**: Uses EJS templates for rendering dynamic HTML pages.  
+- **Static File Handling**: Serves CSS, JS, images, and other assets from the `public` directory.  
+- **Middleware**: Implements request logging into an `access.log` file.  
+- **Error Handling**: Custom 404 error page for undefined routes.  
+- **Modular Design**: Clean separation of routes and utilities.  
+
+---
+
+## 📂 File Structure  
+
+```
+.
+├── routes/
+│   ├── about.js       # Handler for the /about route
+│   ├── apiData.js     # API route returning JSON data
+│   ├── home.js        # Handler for the home route
+├── views/
+│   ├── about.ejs      # About page template
+│   ├── index.ejs      # Home page template
+│   ├── error.ejs      # Error page template
+├── public/
+│   ├── css/           # Static CSS files
+│   ├── js/            # Static JavaScript files
+│   ├── images/        # Static images
+├── server.js          # Main Bun server script
+├── README.md          # Project documentation
+└── access.log         # Log file (generated dynamically)
+```
+
+---
+
+## 🤝 Contribution  
+
+Feel free to open issues or submit pull requests to improve this sample.
+
+---
+
+## 📝 License  
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
