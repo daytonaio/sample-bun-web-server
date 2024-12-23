@@ -1,0 +1,21 @@
+{
+    "name": "Bun JS Development Environment",
+    "image": "oven/bun:latest",
+    "forwardPorts": [
+      3000
+    ],
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+          "typescript.suggest.autoImports": true
+        },
+        "extensions": [
+          "esbenp.prettier-vscode",
+          "dbaeumer.vscode-eslint",
+          "vscjava.vscode-java-pack"
+        ]
+      }
+    },
+    "postCreateCommand": "bun install"
+  }

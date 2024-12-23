@@ -10,22 +10,22 @@ Sample Bun, HTTP server that demonstrates routing, template rendering using EJS,
 1. **Install Daytona**: Follow the [Daytona installation guide](https://www.daytona.io/docs/installation/installation/).  
 2. **Create the Workspace**:  
    ```bash  
-   daytona create https://github.com/daytonaio/sample-bun.git
+   daytona create https://github.com/daytonaio/sample-bun-web-server
    ```  
-3. **Install Bun**:  
-   Follow the [Bun installation guide](https://bun.sh/docs/installation) to install Bun on your system.  
-4. **Install Dependencies**:  
+<!-- 3. **Install Bun**:  
+   Follow the [Bun installation guide](https://bun.sh/docs/installation) to install Bun on your system.   -->
+<!-- 4. **Install Dependencies**:  
    Run the following command to install the project dependencies:  
    ```bash  
    bun install  
-   ```  
-5. **Start the Application**:  
+   ```   -->
+3. **Start the Application**:  
    Use the following command to start the server:  
    ```bash  
    bun run server.js  
    ```  
 
-6. **Access the Application**:  
+4. **Access the Application**:  
    Open your browser and navigate to:  
    ```
    http://localhost:3000
@@ -59,7 +59,6 @@ Sample Bun, HTTP server that demonstrates routing, template rendering using EJS,
 ├── public/
 │   ├── css/           # Static CSS files
 │   ├── js/            # Static JavaScript files
-│   ├── images/        # Static images
 ├── server.js          # Main Bun server script
 ├── README.md          # Project documentation
 └── access.log         # Log file (generated dynamically)
