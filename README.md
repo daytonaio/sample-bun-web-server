@@ -1,9 +1,6 @@
 # Sample JavaScript/Bun
 
 Sample Bun, HTTP server that demonstrates routing, template rendering using EJS, and static file handling. 
-# Sample JavaScript/Bun
-
-Sample Bun, HTTP server that demonstrates routing, template rendering using EJS, and static file handling. 
 ---
 
 ## 🚀 Getting Started  
